@@ -13,7 +13,10 @@
 		std::vector<Sprite*> sprites;
 		int width;
 		int height;
+		friend SDL_Texture* loadTexture( std::string path, Controller& c  );
 		SDL_Window* gWindow = NULL;
 		SDL_Renderer* gRenderer = NULL;
 	};
 #endif
+
+SDL_Texture* loadTexture( std::string path, Controller& c  );

@@ -28,8 +28,10 @@ int main( int argc, char* args[] )
 	/** Titlescreen **/
 	// [Insert titlescreen code here]
 
+	// Load textures
+	SDL_Texture* ball = loadTexture("ball.png", screen);
 	// Add two sprites to the controller object
-	Sprite s1(32,32,64,64);
+	Sprite s1(32,32,32,32, ball);
 	screen.addSprite(s1);
 	Sprite s2(64,200,128,50);
 	screen.addSprite(s2);
